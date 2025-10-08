@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Generate Assignment</title>
+  </head>
+  <body>
+    <h1>Generate Assignment</h1>
+    <form method="post" action="/generate">
+      Topic:
+      <input
+        type="text"
+        name="topic"
+        required
+        title="Enter the topic for the assignment"
+        placeholder="Enter topic"
+      />
+      <input type="submit" value="Generate" />
+    </form>
+    {% if assignment %}
+    <h2>Assignment:</h2>
+    <p>{{ assignment }}</p>
+    {% endif %}
+    <a href="/">Home</a>
+  </body>
+</html>
