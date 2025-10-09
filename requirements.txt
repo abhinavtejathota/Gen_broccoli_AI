@@ -5,3 +5,4 @@ groq
 markupsafe
 gunicorn
 langchain-groq
+python-dotenv
